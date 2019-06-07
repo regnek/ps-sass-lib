@@ -37,7 +37,7 @@
 
 To use our Sass Library, simply download or clone this repository into your project directory, rename it `scss` and compile your styles to a css folder.
 
-```
+```shell
 ~/project-folder $ sass --watch scss:css
 ```
 
