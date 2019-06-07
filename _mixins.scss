@@ -1,0 +1,147 @@
+// MIXINS
+
+// flexbox
+@mixin flex($align, $justify, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin grid($column-count, $gap: 25px) {
+  display: grid;
+  grid-template-columns: repeat($column-count, 1fr);
+  grid-gap: $gap;
+}
+
+
+// @include flex(center, center, column);
+
+@mixin box_shadow ($level) {
+  @if $level == 1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  @else if $level == 2 {
+    box-shadow: 0 3px .375rem rgba(0, 0, 0, 0.16),
+                0 3px .375rem rgba(0, 0, 0, 0.23);
+  }
+  
+  @else if $level == 3 {
+    box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19),
+                0 .375rem .375rem rgba(0, 0, 0, 0.23);
+  }
+  
+  @else if $level == 4 {
+    box-shadow: 0 .5rem 1.75rem rgba(0, 0, 0, 0.25),
+                0 .5rem 1rem rgba(0, 0, 0, 0.22);
+  }
+  
+  @else if $level == 5 {
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.30),
+                0 1rem .75rem rgba(0, 0, 0, 0.22);
+  }
+}
+
+
+// @include box_shadow(2);
+
+$tablet: 45rem;
+$desktop: 68.75rem;
+$desktop-large: 80rem;
+$huge: 90rem;
+$hugest: 120rem;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$desktop-large}) {
+    @content;
+  }
+}
+
+@mixin huge {
+  @media (min-width: #{$huge}) {
+    @content;
+  }
+}
+
+@mixin hugest {
+  @media (min-width: #{$hugest}) {
+    @content;
+  }
+}
+
+@mixin custom($screen) {
+  @media (min-width: $screen + 'px') {
+    @content;
+  }
+}
+
+// linear-gradient mixin
+// $list1: $blue, $green, $orange;
+// @include gradient(left, $list1);
+
+@mixin gradient($direction, $list) {
+  background: linear-gradient($direction, $list);
+}
+
+// @param {Number}   $responsive  - Viewport-based size
+// @param {Number}   $min         - Minimum font size (px)
+// @param {Number}   $max         - Maximum font size (px)
+//                                  (optional)
+// @param {Number}   $fallback    - Fallback for viewport-
+//                                  based units (optional)
+//
+// @example scss - 5vw font size (with 50px fallback),
+//                  minumum of 35px and maximum of 150px
+//
+// @include responsive-font(5vw, 35px, 150px, 50px);
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+// end of mixins 
+
+
+// slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

@@ -1,0 +1,19 @@
+@import 'mixins';
+@import 'helpers';
+@import 'layout';
+
+
+// basic reset
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
