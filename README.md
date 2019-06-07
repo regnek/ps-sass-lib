@@ -52,7 +52,7 @@ The `flex` mixin allows you to add flex capabilities to any class, prescribing t
 ```scss
 .section {
   padding: 5rem 0;
-  @include flex(center, center);
+  @include flex(center, space-between);
 }
 ```
 
