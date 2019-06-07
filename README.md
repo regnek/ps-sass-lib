@@ -38,7 +38,7 @@
 To use our Sass Library, simply download or clone this repository into your project directory, rename it `scss` and compile your styles to a css folder.
 
 ```
-$ sass --watch scss:css
+~/project-folder $ sass --watch scss:css
 ```
 
 You won't always need all of the helpers and mixins. Sometimes you might not use any of them. If that's the case, in your `main.scss` file, comment out whichever `@import` directives you don't need, and they won't be compiled to your css output.
