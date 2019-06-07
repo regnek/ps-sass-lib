@@ -11,7 +11,7 @@
 ## Table of Contents
 
 1. [Mixins](#mixins)
-    - [Flexbox](#flexbox)
+    - [Flex](#flex)
     - [Grid](#grid-mixin)
     - [Box shadow](#ordering-of-property-declarations)
     - [Media queries](#media-queries)
@@ -34,7 +34,7 @@
 
 ## Mixins
 
-### Flexbox
+### Flex
 
 ```scss
 @mixin flex($align, $justify, $direction: row) {
