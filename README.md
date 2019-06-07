@@ -35,7 +35,7 @@
 
 ## How to Use
 
-To use our Sass Library, simply download or clone this repository into your main directory, rename it `scss` and compile your styles to a css folder.
+To use our Sass Library, simply download or clone this repository into your project directory, rename it `scss` and compile your styles to a css folder.
 
 ```
 $ sass --watch scss:css
