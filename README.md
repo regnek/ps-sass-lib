@@ -36,7 +36,25 @@
 
 ### Flexbox
 
-lorem ipsum
+```scss
+@mixin flex($align, $justify, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+```
+
+The `flex` mixin allows you to add flex capabilities to any class, prescribing the subsequent properties `align-items`, `justify-content`, and `flex-direction` if desired.
+
+**Example**
+
+```scss
+.section {
+  padding: 5rem 0;
+  @include flex(center, center);
+}
+```
 
 ### Grid
 
