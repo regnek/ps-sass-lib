@@ -1,6 +1,6 @@
 # PS Sass Library
 
-*Helpful base styles to expedite workflow and create a better-optimized product*
+*Helpful base styles to expedite workflow and create a better product*
 
 ## Other PS Resources
 
