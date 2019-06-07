@@ -21,7 +21,7 @@
     - [Margin](#margin)
     - [Padding](#padding)
     - [Hiding elements](#hiding-elements)
-    - [Flex](#flex)
+    - [Flex](#flex-helper)
     - [Images](#images)
     - [Positioning](#positioning)
     - [Overflow](#overflow)
@@ -56,7 +56,7 @@ The `flex` mixin allows you to add flex capabilities to any class, prescribing t
 }
 ```
 
-### Grid
+### Grid Mixin
 
 lorem ipsum
 
@@ -92,7 +92,7 @@ lorem ipsum
 
 lorem ipsum
 
-### Flex 
+### Flex Helper
 
 lorem ipsum
 
