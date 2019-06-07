@@ -4,7 +4,7 @@
 
 ## Other PS Resources
 
-- [CSS/Sass Style Guide](https://github.com/regnek/ps-sass-lib)
+- [CSS/Sass Style Guide](https://github.com/regnek/ps-css)
 - [JavaScript Style Guide](https://github.com/regnek/ps-js)
 - [Snippet Library](https://github.com/regnek/ps-snippet-lib)
 
