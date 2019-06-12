@@ -11,6 +11,10 @@
 ## Table of Contents
 
 1. [How to Use](#how-to-use)
+1. [Layout](#layout)
+    - [Grid](#grid)
+    - [Rows](#rows)
+    - [Columns](#columns)
 1. [Mixins](#mixins)
     - [Flex](#flex)
     - [Grid](#grid-mixin)
@@ -27,10 +31,6 @@
     - [Positioning](#positioning)
     - [Overflow](#overflow)
     - [Typography](#typography)
-1. [Layout](#layout)
-    - [Grid](#grid)
-    - [Rows](#rows)
-    - [Columns](#columns)
 
 
 ## How to Use
@@ -42,6 +42,11 @@ To use our Sass Library, simply download or clone this repository into your proj
 ```
 
 You won't always need all of the helpers and mixins. Sometimes you might not use any of them. If that's the case, in your `main.scss` file, comment out whichever `@import` directives you don't need, and they won't be compiled to your css output.
+
+## Layout
+
+![grid system](https://github.com/regnek/ps-sass-lib/doc-assets/sass-lib-layout.jpg)
+
 
 ## Mixins
 
