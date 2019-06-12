@@ -57,7 +57,7 @@ The `row` class is the container for columns, and is displayed `flex` by default
 
 When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` to `flex-direction: column` to place columns on top of each other.
 
-*scss*
+**scss**
 
 ```scss
 .row {
@@ -70,7 +70,7 @@ When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` t
 }
 ```
 
-*html*
+**html**
 
 ```html
 <div class="row">
