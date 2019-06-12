@@ -45,7 +45,7 @@ You won't always need all of the helpers and mixins. Sometimes you might not use
 
 ## Layout
 
-![grid system](https://github.com/regnek/ps-sass-lib/blob/master/doc-assets/sass-lib-layout.jpg)
+![grid system](https://github.com/regnek/ps-sass-lib/blob/master/doc-assets/sass-lib-grid-layout.jpg)
 
 
 ## Mixins
