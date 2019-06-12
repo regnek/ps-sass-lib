@@ -53,7 +53,19 @@ In CSS, we specify our column size by the number of columns in the row, not by h
 
 ### Rows
 
-Rows contain columns, and are displayed `flex` by default. This evenly distributes the columns within the rows.
+The `row` class is the container for columns, and are displayed `flex` by default. This evenly distributes the columns within the rows.
+
+When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` to `flex-direction: column` to place columns on top of each other.
+
+```scss
+.row {
+  display: flex;
+  flex-direction: row;
+
+  @media ($break-point) {
+    flex-direction: column;
+  }
+}
 
 ```html
 <div class="row">
