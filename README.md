@@ -45,6 +45,10 @@ You won't always need all of the helpers and mixins. Sometimes you might not use
 
 ## Layout
 
+### Grid
+
+In CSS, we specify our column size by the number of columns in the row, not by how many columns it takes up. The math is easier this way.
+
 ![grid system](https://github.com/regnek/ps-sass-lib/blob/master/doc-assets/sass-lib-grid-layout.jpg)
 
 
