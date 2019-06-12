@@ -51,6 +51,18 @@ In CSS, we specify our column size by the number of columns in the row, not by h
 
 ![grid system](https://github.com/regnek/ps-sass-lib/blob/master/doc-assets/sass-lib-grid-layout.jpg)
 
+### Rows
+
+Rows contain columns, and are displayed `flex` by default. This evenly distributes the columns within the rows.
+
+```html
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+```
+
 
 ## Mixins
 
