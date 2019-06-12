@@ -66,6 +66,7 @@ When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` t
     flex-direction: column;
   }
 }
+```
 
 ```html
 <div class="row">
