@@ -1,6 +1,6 @@
 # PS Sass Library
 
-*Helpful base styles to expedite workflow and create a better product*
+*Helpful base styles to expedite workflow and get everyone using the same codebase*
 
 ## Other PS Resources
 
@@ -35,7 +35,7 @@
 
 ## How to Use
 
-To use our Sass Library, simply download or clone this repository into your project directory, rename it `scss` and compile your styles to a css folder.
+To use our Sass Library, simply download or clone this repository and place the *sass* folder found in this repository in your current project directory.
 
 ```shell
 ~/project-folder $ sass --watch scss:css
@@ -55,6 +55,8 @@ In CSS, we specify our column size by the number of columns in the row, not by h
 
 The `row` class is the container for columns, and is displayed `flex` by default. This evenly distributes the columns within the rows.
 
+> Note: This system is 
+
 When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` to `flex-direction: column` to place columns on top of each other.
 
 **scss**
@@ -62,10 +64,10 @@ When the `row` breaks on mobile/tablet, it switches from `flex-direction: row` t
 ```scss
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   @media ($break-point) {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 ```
