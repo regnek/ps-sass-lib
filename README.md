@@ -35,7 +35,9 @@
 
 ## How to Use
 
-To use our Sass Library, simply download or clone this repository and place the *sass* folder found in this repository in your current project directory.
+To use our Sass library, simply download or clone this repository, and copy the *sass* folder found in this repository into your current project directory.
+
+In your cli, enter the following command to make Sass continuously watch for changes, and write them to a file in a *css* folder.
 
 ```shell
 ~/project-folder $ sass --watch scss:css
